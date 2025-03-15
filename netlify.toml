@@ -1,0 +1,13 @@
+[build]
+  command = "yarn build:netlify"
+  publish = "dist/app"
+
+[build.environment]
+  NODE_VERSION = "16"  
+  NODE_OPTIONS = "--max_old_space_size=3072" 
+  YARN_FLAGS = "--no-optional --network-timeout 600000"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
