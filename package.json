@@ -6,7 +6,7 @@
     "dev": "vite --open --host",
     "dev-stage": "vite --mode stage",
     "build": "vite build",
-    "build:github": "vite build --base=/project._hanacapital_MO/",
+    "build:github": "vite build --base=/hanacapital-ts-mo/",
     "build:netlify": "NODE_OPTIONS=--max_old_space_size=3072 vite build --base=/",
     "preview": "vite preview --host",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
